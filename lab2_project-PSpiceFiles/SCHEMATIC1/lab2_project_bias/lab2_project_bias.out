@@ -1,0 +1,87 @@
+
+**** 09/23/24 14:14:45 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-lab2_project_bias"  [ E:\electric_circuit_lab2\lab2_project-PSpiceFiles\SCHEMATIC1\lab2_project_bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "lab2_project_bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB2_PROJECT
+D_D1         N00099 N00285 Dbreak 
+V_V1         N00092 0 5Vdc
+R_R1         N00092 N00099  1.5k TC=0,0 
+R_RD         0 N00285  50 TC=0,0 
+
+**** RESUMING lab2_project_bias.cir ****
+.END
+
+**** 09/23/24 14:14:45 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-lab2_project_bias"  [ E:\electric_circuit_lab2\lab2_project-PSpiceFiles\SCHEMATIC1\lab2_project_bias.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00092)    5.0000 (N00099)     .8212 (N00285)     .1393 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.786E-03
+
+    TOTAL POWER DISSIPATION   1.39E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/23/24 14:14:45 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-lab2_project_bias"  [ E:\electric_circuit_lab2\lab2_project-PSpiceFiles\SCHEMATIC1\lab2_project_bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .81
+
