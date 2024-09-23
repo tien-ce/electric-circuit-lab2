@@ -1,5 +1,5 @@
 
-**** 09/23/24 14:14:45 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+**** 09/23/24 14:57:33 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-lab2_project_bias"  [ E:\electric_circuit_lab2\lab2_project-PSpiceFiles\SCHEMATIC1\lab2_project_bias.sim ] 
 
@@ -32,15 +32,16 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source LAB2_PROJECT
-D_D1         N00099 N00285 Dbreak 
-V_V1         N00092 0 5Vdc
-R_R1         N00092 N00099  1.5k TC=0,0 
-R_RD         0 N00285  50 TC=0,0 
+V_V1         N00092 0 10Vdc
+D_D1         N00092 N00457 Dbreak 
+D_D2         N00457 N00461 Dbreak 
+D_D3         N00461 N00465 Dbreak 
+R_R1         0 N00465  1k TC=0,0 
 
 **** RESUMING lab2_project_bias.cir ****
 .END
 
-**** 09/23/24 14:14:45 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+**** 09/23/24 14:57:33 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-lab2_project_bias"  [ E:\electric_circuit_lab2\lab2_project-PSpiceFiles\SCHEMATIC1\lab2_project_bias.sim ] 
 
@@ -55,7 +56,7 @@ R_RD         0 N00285  50 TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N00092)    5.0000 (N00099)     .8212 (N00285)     .1393 
+(N00092)   10.0000 (N00457)    9.2907 (N00461)    8.5815 (N00465)    7.8722 
 
 
 
@@ -63,15 +64,15 @@ R_RD         0 N00285  50 TC=0,0
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V1        -2.786E-03
+    V_V1        -7.872E-03
 
-    TOTAL POWER DISSIPATION   1.39E-02  WATTS
+    TOTAL POWER DISSIPATION   7.87E-02  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 09/23/24 14:14:45 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+**** 09/23/24 14:57:33 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-lab2_project_bias"  [ E:\electric_circuit_lab2\lab2_project-PSpiceFiles\SCHEMATIC1\lab2_project_bias.sim ] 
 
@@ -83,5 +84,5 @@ R_RD         0 N00285  50 TC=0,0
 
 
 
-  Total job time (using Solver 1)   =         .81
+  Total job time (using Solver 1)   =        1.30
 
